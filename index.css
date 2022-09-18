@@ -1,0 +1,96 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: hsl(204, 43%, 93%);
+    font-family: 'Karla', sans-serif;
+}
+
+main {
+    width: 50%;
+    margin: 80px auto;
+}
+
+div.first {
+    background-color: white;
+    padding: 25px;
+}
+
+h2 {
+    color: hsl(179, 62%, 43%);
+}
+
+div.first h3 {
+    margin: 15px 0 10px 0;
+    color: hsl(71, 73%, 54%);
+}
+
+div.first p {
+    color: hsl(218, 22%, 67%);
+    margin-bottom: 3px;
+}
+
+div.second {
+    display: flex;
+    color: white;
+}
+
+div.second div {
+    flex: 1 1 0;
+    padding: 25px;
+}
+
+div.item1 {
+    background-color: hsl(179, 62%, 43%);
+}
+
+div.item1 h3+p {
+    margin: 20px 0 10px 0;
+    font-size: 2rem;
+    position: relative;
+}
+
+div.item1 h3+p span {
+    position: absolute;
+    font-size: 1rem;
+    top: 50%;
+    left: 55px;
+    transform: translateY(-50%);
+    color: hsl(204, 43%, 93%);
+}
+
+button {
+    width: 100%;
+    height: 50px;
+    border-radius: 5px;
+    background-color: hsl(71, 73%, 54%);
+    border: none;
+    outline: none;
+    cursor: pointer;
+    margin-top: 20px;
+    box-shadow: 0 2px 4px 0 hsl(71, 60%, 33%), 0 6px 10px 0 hsl(71, 61%, 38%);
+    color: white;
+    font-weight: 500;
+    font-size: 1.3rem;
+}
+
+div.item2 {
+    background-color: hsla(179, 62%, 43%, 0.8);
+}
+
+div.item2 h3 {
+    margin-bottom: 20px;
+}
+
+div.item2 p:not(p:last-child) {
+    margin-bottom: 5px;
+}
+
+@media screen and (max-width: 800px) {
+    div.second {
+        flex-direction: column;
+    }
+}
